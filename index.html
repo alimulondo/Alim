@@ -79,10 +79,10 @@
 						</a>
 					</div>
 
-					<div class="col-lg-8 header-left">
-						<div class="">
+					<div id="block" style="width: 100%; height: 800px;"  class="col-lg-8 header-left" data-vide-bg="video/ocean2" data-vide-options="position: 0% 50%">
+						<!-- <div class="">
 							<img class="img-fluid w-100" src="img/banner/banner-img1.jpg" alt="">
-						</div>
+						</div> -->
 					</div>
 
 					<div class="header-right col-lg-4">
@@ -622,6 +622,14 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	<script src="vendors/swiper/js/swiper.min.js"></script>
 	<script src="vendors/scroll/jquery.mCustomScrollbar.js"></script>
 	<script src="js/theme.js"></script>
+	<script src="vendors/vide/jquery.vide.js"></script>
+
+	<script>
+ $(document).ready(function () {
+   $('#block').vide({'video/ocean2'}); // Non declarative initialization
+   
+ });
+</script>
 </body>
 
 </html>
